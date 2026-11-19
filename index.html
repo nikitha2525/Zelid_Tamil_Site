@@ -233,6 +233,39 @@
   footer img{height:26px;width:auto}
   footer a{color:#C9D4F2}
 
+
+  /* how / submit / contact */
+  .howsteps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  @media (max-width:900px){.howsteps{grid-template-columns:1fr}}
+  .hs{position:relative;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:30px 26px;box-shadow:var(--shadow)}
+  .hs-n{position:absolute;top:18px;right:22px;font:800 44px/1 Inter,sans-serif;color:var(--navy-50)}
+  .hs .ico{width:54px;height:54px;border-radius:14px;margin-bottom:16px}
+  .hs h3{font-size:20px}
+  .hs p{color:var(--text-2);font-size:15.5px;margin:8px 0 0}
+  .hs .btn{margin-top:18px;height:46px;font-size:15px}
+  .note-wa{text-align:center;margin:26px 0 0;color:var(--text-2)}
+  .note-wa a,.sub-list a,details a,.contact-line a{color:var(--navy-600);font-weight:600}
+  footer .contact-line a{color:#C9D4F2}
+  .sub{display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:start;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-xl);padding:40px;box-shadow:var(--shadow)}
+  @media (max-width:900px){.sub{grid-template-columns:1fr;padding:28px 22px}}
+  .sub>*{min-width:0}
+  .sub h2{font-size:clamp(24px,3vw,32px)}
+  .sub-lead{margin:10px 0 18px;color:var(--text-2)}
+  .sub-list{margin:0;padding-left:22px;display:grid;gap:12px;color:var(--text-2)}
+  .sub-list li::marker{color:var(--navy-600);font-weight:700}
+  .mono{display:inline-block;margin-top:6px;font:500 13.5px/1.6 Inter,'Noto Sans Tamil',monospace;background:var(--navy-50);color:var(--navy-800);padding:6px 10px;border-radius:8px;word-break:break-word}
+  .sub-card{background:var(--gold-50);border:1px solid #F3DDA0;border-radius:var(--r-lg);padding:24px}
+  .sub-card ul{margin:10px 0 18px;padding-left:20px;color:var(--text-2)}
+  .sub-card .btn{width:100%}
+  .sub-card small{display:block;margin-top:10px;color:var(--gold-700);font-size:13px}
+  .contacts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:960px;margin:0 auto}
+  @media (max-width:800px){.contacts{grid-template-columns:1fr}}
+  .ct{display:flex;align-items:center;gap:16px;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:20px;box-shadow:var(--shadow);text-decoration:none;transition:transform .2s;min-width:0}
+  .ct:hover{transform:translateY(-3px)}
+  .ct>div{min-width:0}
+  .ct small{display:block;color:var(--text-3);font-size:13px}
+  .ct b{display:block;font:600 16px Inter,sans-serif;color:var(--text);word-break:break-all}
+  .pending{color:var(--text-3)!important;font-weight:500!important;font-family:var(--ta)!important}
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
@@ -248,10 +281,12 @@
       <li><a href="#about">நிகழ்வு</a></li>
       <li><a href="#categories">பிரிவுகள்</a></li>
       <li><a href="#dates">தேதிகள்</a></li>
-      <li><a href="#benefits">பயன்கள்</a></li>
+      <li><a href="#how">பதிவு முறை</a></li>
+      <li><a href="#submit">சமர்ப்பிப்பு</a></li>
       <li><a href="#faq">கேள்விகள்</a></li>
+      <li><a href="#contact">தொடர்புக்கு</a></li>
     </ul>
-    <a class="btn btn-gold cta-nav" href="https://openmadurai.org/sl/MsQuFQP0" target="_blank" rel="noopener">பதிவு செய்ய</a>
+    <a class="btn btn-gold cta-nav" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_IE2c8BKWEeKO6FIAtXFcLBswMaPrWl68UuVDdVlh06cZg/viewform" target="_blank" rel="noopener">பதிவு செய்ய</a>
     <button class="menu-btn" id="menuBtn" aria-label="மெனு" aria-expanded="false" aria-controls="menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
@@ -269,7 +304,7 @@
       <p class="lead">செயற்கை நுண்ணறிவின் ஆற்றலைத் தமிழ் மொழியின் வழியாக ஆராய்ந்து, உங்கள் படைப்பாற்றலை உலகுக்குக் காட்டும் இணையவழி AI போட்டி.</p>
       <div class="quote" aria-label="நம்பு, பங்கெடு, வெற்றி பெறு"><span>நம்பு</span><span class="sep"></span><span>பங்கெடு</span><span class="sep"></span><span class="win">வெற்றி பெறு</span></div>
       <div class="actions">
-        <a class="btn btn-gold" href="https://openmadurai.org/sl/MsQuFQP0" target="_blank" rel="noopener">
+        <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_IE2c8BKWEeKO6FIAtXFcLBswMaPrWl68UuVDdVlh06cZg/viewform" target="_blank" rel="noopener">
           இப்போதே பதிவு செய்யுங்கள்
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -296,7 +331,7 @@
       <div><b id="cdM">--</b><small>நிமிடம்</small></div>
       <div><b id="cdS">--</b><small>விநாடி</small></div>
     </div>
-    <a class="btn btn-navy" href="https://openmadurai.org/sl/MsQuFQP0" target="_blank" rel="noopener">பதிவு செய்ய</a>
+    <a class="btn btn-navy" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_IE2c8BKWEeKO6FIAtXFcLBswMaPrWl68UuVDdVlh06cZg/viewform" target="_blank" rel="noopener">பதிவு செய்ய</a>
   </div>
 </div>
 
@@ -306,7 +341,7 @@
       <span class="eyebrow ta">நிகழ்வு பற்றி</span>
       <div class="sec-head" style="margin-bottom:22px"><h2>AI மூலம் உங்கள் படைப்பாற்றலை வெளிப்படுத்தத் தயாரா?</h2></div>
       <p><b>Zelid Tech</b> பெருமையுடன் வழங்கும் <b>தமிழ் AI படைப்பாற்றல் சவால் 2026</b> – மாணவர்கள், டெவலப்பர்கள், வடிவமைப்பாளர்கள் மற்றும் AI ஆர்வலர்கள் தமிழ் மொழியின் வழியாக செயற்கை நுண்ணறிவின் ஆற்றலை ஆராய ஊக்குவிக்கும் ஒரு இணையவழிப் போட்டி.</p>
-      <p>தொழில்நுட்பம், படைப்பாற்றல், தமிழ் – இந்த மூன்றையும் இணைத்து, AI கருவிகளைக் கொண்டு தனித்துவமான ஒன்றை உருவாக்கும் அரிய வாய்ப்பு இது. மகாகவி பாரதியாரின் பிறந்தநாளை முன்னிட்டு, அவரது சிந்தனைகளை இன்றைய தொழில்நுட்பத்தின் மொழியில் மீண்டும் உயிர்ப்பிப்போம்.</p>
+      <p>தொழில்நுட்பம், படைப்பாற்றல், தமிழ் – இந்த மூன்றையும் இணைத்து, AI கருவிகளின் துணையுடன் <b>உங்கள் சொந்தப் புதிய படைப்பை</b> உருவாக்கும் அரிய வாய்ப்பு இது. மகாகவி பாரதியாரின் பிறந்தநாளை முன்னிட்டு நடைபெறும் இந்தப் போட்டியில், அவரது கருத்துகளையும் செய்திகளையும் உத்வேகமாகக் கொண்டு புதிதாகப் படையுங்கள்.</p>
     </div>
     <div class="pillars reveal">
       <div class="pillar"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="14" rx="2"/><path d="M9 9h6v6H9zM9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div><div><h3>தொழில்நுட்பம்</h3><p>இன்றைய AI கருவிகளைப் பயன்படுத்திப் புதிய படைப்புகள்.</p></div></div>
@@ -321,7 +356,7 @@
     <div class="sec-head center reveal">
       <span class="eyebrow ta">போட்டிப் பிரிவுகள்</span>
       <h2>மூன்று பிரிவுகள் – உங்கள் திறமைக்கு ஏற்றதைத் தேர்ந்தெடுங்கள்</h2>
-      <p>அனைத்துப் படைப்புகளும் AI கருவிகளைக் கொண்டு உருவாக்கப்பட வேண்டும்; மையக் கருத்து மகாகவி பாரதியார்.</p>
+      <p>பாரதியாரின் கருத்துகளால் ஈர்க்கப்பட்டு, AI கருவிகளின் உதவியுடன் நீங்களே உருவாக்கும் புதிய, சொந்தப் படைப்புகளே போட்டிக்கு ஏற்கப்படும்.</p>
     </div>
     <div class="cats">
       <article class="cat reveal">
@@ -329,21 +364,21 @@
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 3C13 4 8 9 6 16l-1 4 4-2c5-2 9-6 11-15Z"/><path d="M6 16 15 7"/></svg></div>
         <h3>AI உருவாக்கிய தமிழ் கவிதை</h3>
         <span class="tag">AI-Generated Tamil Poetry</span>
-        <p>பாரதியாரின் கருத்துகளால் ஈர்க்கப்பட்ட கவிதைகளை AI உதவியுடன் படையுங்கள்.</p>
+        <p>பாரதியாரின் கருத்துகளால் ஈர்க்கப்பட்டு, AI உதவியுடன் நீங்கள் எழுதும் புதிய தமிழ்க் கவிதைகள்.</p>
       </article>
       <article class="cat reveal">
         <div class="num">02</div>
         <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 17-5-5-9 8"/></svg></div>
         <h3>AI உருவாக்கிய சுவரொட்டிகள்</h3>
         <span class="tag">AI-Generated Posters</span>
-        <p>பாரதியாரின் செய்திகளைப் பரப்பும் சுவரொட்டிகளை AI கொண்டு வடிவமையுங்கள்.</p>
+        <p>பாரதியாரின் செய்திகளை மக்களிடம் கொண்டு சேர்க்கும் வகையில் AI மூலம் நீங்கள் வடிவமைக்கும் சுவரொட்டிகள்.</p>
       </article>
       <article class="cat reveal">
         <div class="num">03</div>
         <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="13" rx="2"/><path d="m3 8 2.5-5 3 2L11 2l3 2 2.5-2 2 4"/><path d="m10 12 5 2.5-5 2.5Z"/></svg></div>
         <h3>AI உருவாக்கிய குறும்படங்கள்</h3>
         <span class="tag">AI-Generated Short Films</span>
-        <p>பாரதியாரின் சிந்தனைகள் மற்றும் கல்வி குறித்த கருத்துகளால் ஈர்க்கப்பட்ட குறும்படங்களை உருவாக்குங்கள்.</p>
+        <p>பாரதியாரின் சிந்தனைகள் மற்றும் கல்வி குறித்த கருத்துகளால் ஈர்க்கப்பட்டு AI மூலம் நீங்கள் உருவாக்கும் குறும்படங்கள்.</p>
       </article>
     </div>
   </div>
@@ -358,11 +393,11 @@
     <div class="timeline reveal">
       <div class="step">
         <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></div>
-        <small>படி 1</small><b>பதிவு</b><p>₹50 கட்டணத்துடன் இப்போதே பதிவு செய்யுங்கள்.</p><span class="live">தற்போது திறந்துள்ளது</span>
+        <small>படி 1</small><b>பதிவு</b><p>படிவத்தை நிரப்பி, WhatsApp-இல் வரும் QR மூலம் ₹50 செலுத்துங்கள்.</p><span class="live">தற்போது திறந்துள்ளது</span>
       </div>
       <div class="step">
         <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5M5 21h14"/></svg></div>
-        <small>டிசம்பர் 9, 2026</small><b>கடைசி சமர்ப்பிப்பு</b><p>உங்கள் AI படைப்பைச் சமர்ப்பிக்கக் கடைசி நாள்.</p>
+        <small>டிசம்பர் 9, 2026</small><b>கடைசி சமர்ப்பிப்பு</b><p>உங்கள் AI படைப்பை மின்னஞ்சல் மூலம் சமர்ப்பிக்கக் கடைசி நாள்.</p>
       </div>
       <div class="step gold">
         <div class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg></div>
@@ -402,9 +437,9 @@
       <div class="l">
         <span class="eyebrow ta" style="color:#AFC0EA">பதிவு</span>
         <h2>உங்கள் இடத்தை இன்றே உறுதி செய்யுங்கள்</h2>
-        <p>பதிவு செய்து, AI மூலம் தமிழுக்கு உங்கள் படைப்பைப் பரிசளியுங்கள். கடைசி சமர்ப்பிப்பு நாள் டிசம்பர் 9, 2026.</p>
+        <p>பதிவுப் படிவத்தை நிரப்புங்கள்; ₹50 கட்டணம் செலுத்துவதற்கான QR குறியீடு உங்கள் WhatsApp எண்ணுக்கு அனுப்பப்படும். கடைசி சமர்ப்பிப்பு நாள் டிசம்பர் 9, 2026.</p>
         <div class="actions">
-          <a class="btn btn-gold" href="https://openmadurai.org/sl/MsQuFQP0" target="_blank" rel="noopener">இப்போதே பதிவு செய்யுங்கள்</a>
+          <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_IE2c8BKWEeKO6FIAtXFcLBswMaPrWl68UuVDdVlh06cZg/viewform" target="_blank" rel="noopener">இப்போதே பதிவு செய்யுங்கள்</a>
         </div>
       </div>
       <div class="r">
@@ -416,18 +451,87 @@
   </div>
 </section>
 
-<section class="block alt" id="bharathi">
-  <div class="container bharathi">
-    <div class="b-img reveal"><img src="assets/bharathi.webp" alt="மகாகவி பாரதியார்"></div>
-    <div class="reveal">
-      <span class="eyebrow ta">பாரதியார் பிறந்தநாள் சிறப்பு</span>
-      <div class="sec-head" style="margin-bottom:18px"><h2>மகாகவி பாரதியாரின் கனவுகளுக்கு AI-யின் சிறகுகள்</h2></div>
-      <p>மகாகவி சுப்பிரமணிய பாரதியார் (1882–1921) – கவிஞர், விடுதலைப் போராட்ட வீரர், சமூகச் சீர்திருத்தவாதி. தமிழுக்குப் புதிய உயிரோட்டம் தந்த அவரது சிந்தனைகளையும் கல்விக் கனவுகளையும், இன்றைய செயற்கை நுண்ணறிவுத் தொழில்நுட்பத்தின் மூலம் புதிய தலைமுறைக்குக் கொண்டு செல்வதே இந்தச் சவாலின் நோக்கம்.</p>
-      <blockquote>“யாமறிந்த மொழிகளிலே தமிழ்மொழி போல் இனிதாவது எங்கும் காணோம்”<cite>– மகாகவி பாரதியார்</cite></blockquote>
+
+
+<section class="block alt" id="how">
+  <div class="container">
+    <div class="sec-head center reveal">
+      <span class="eyebrow ta">பதிவு மற்றும் கட்டணம் செலுத்தும் முறை</span>
+      <h2>மூன்று எளிய படிகளில் பதிவு செய்யுங்கள்</h2>
+      <p>பதிவுக் கட்டணம் ஒரு பங்கேற்பாளருக்கு ₹50 மட்டுமே.</p>
+    </div>
+    <div class="howsteps">
+      <div class="hs reveal">
+        <div class="hs-n">1</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div>
+        <h3>பதிவுப் படிவத்தை நிரப்புங்கள்</h3>
+        <p>பெயர், மின்னஞ்சல், கைபேசி எண், கல்லூரி / நிறுவனம் ஆகிய விவரங்களை நிரப்பிச் சமர்ப்பியுங்கள். நீங்கள் கொடுக்கும் கைபேசி எண்ணில் WhatsApp இருக்க வேண்டும்.</p>
+        <a class="btn btn-navy" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_IE2c8BKWEeKO6FIAtXFcLBswMaPrWl68UuVDdVlh06cZg/viewform" target="_blank" rel="noopener">படிவத்தைத் திறக்க</a>
+      </div>
+      <div class="hs reveal">
+        <div class="hs-n">2</div>
+        <div class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg></div>
+        <h3>WhatsApp-இல் QR குறியீடு</h3>
+        <p>பதிவு செய்த பிறகு, ₹50 கட்டணம் செலுத்துவதற்கான QR குறியீடு நீங்கள் படிவத்தில் கொடுத்த எண்ணின் WhatsApp-க்கு அனுப்பப்படும்.</p>
+      </div>
+      <div class="hs reveal">
+        <div class="hs-n">3</div>
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+        <h3>₹50 கட்டணம் செலுத்துங்கள்</h3>
+        <p>WhatsApp-இல் வந்த QR குறியீட்டை ஸ்கேன் செய்து ₹50 கட்டணத்தைச் செலுத்துங்கள். அதன் பிறகு உங்கள் படைப்பை உருவாக்கத் தொடங்கலாம்.</p>
+      </div>
+    </div>
+    <p class="note-wa reveal">WhatsApp-இல் QR குறியீடு வரவில்லையா? இந்த எண்ணில் தொடர்பு கொள்ளுங்கள்: <a data-contact="tel-link"><span data-contact="phone"></span></a></p>
+  </div>
+</section>
+
+<section class="block" id="submit">
+  <div class="container">
+    <div class="sub reveal">
+      <div>
+        <span class="eyebrow ta">படைப்பைச் சமர்ப்பிக்கும் முறை</span>
+        <h2>உங்கள் படைப்பை மின்னஞ்சல் மூலம் அனுப்புங்கள்</h2>
+        <p class="sub-lead">கடைசி நாள்: <b>டிசம்பர் 9, 2026</b></p>
+        <ol class="sub-list">
+          <li>உங்கள் படைப்பை <b><a data-contact="email-link"><span data-contact="email"></span></a></b> என்ற மின்னஞ்சல் முகவரிக்கு அனுப்புங்கள்.</li>
+          <li>மின்னஞ்சல் தலைப்பில் (Subject) போட்டிப் பெயர், பிரிவு மற்றும் உங்கள் பெயரைக் குறிப்பிடுங்கள்.<br><span class="mono">தமிழ் AI படைப்பாற்றல் சவால் 2026 – [பிரிவு] – [உங்கள் பெயர்]</span></li>
+          <li>மின்னஞ்சலில் உங்கள் பெயர், பதிவு செய்த கைபேசி எண், கல்லூரி / நிறுவனம், பிரிவு ஆகியவற்றைக் குறிப்பிடுங்கள்.</li>
+          <li>படைப்பை இணைப்பாக (attachment) அனுப்புங்கள். குறும்படம் போன்ற பெரிய கோப்புகளுக்கு Google Drive இணைப்பைப் பகிருங்கள் (அனைவரும் பார்க்கும் அனுமதியுடன்).</li>
+        </ol>
+      </div>
+      <div class="sub-card">
+        <b>பிரிவுகள்</b>
+        <ul>
+          <li>AI உருவாக்கிய தமிழ் கவிதை</li>
+          <li>AI உருவாக்கிய சுவரொட்டி</li>
+          <li>AI உருவாக்கிய குறும்படம்</li>
+        </ul>
+        <a class="btn btn-gold" data-contact="mailto" href="#contact">மின்னஞ்சல் அனுப்ப</a>
+        <small>பொத்தானை அழுத்தினால் தலைப்பும் விவரப் படிவமும் நிரப்பப்பட்ட மின்னஞ்சல் திறக்கும்.</small>
+      </div>
     </div>
   </div>
 </section>
 
+<section class="block alt" id="contact">
+  <div class="container">
+    <div class="sec-head center reveal"><span class="eyebrow ta">தொடர்புக்கு</span><h2>சந்தேகங்களுக்கு எங்களைத் தொடர்பு கொள்ளுங்கள்</h2></div>
+    <div class="contacts reveal">
+      <a class="ct" data-contact="email-link">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <div><small>மின்னஞ்சல்</small><b data-contact="email"></b></div>
+      </a>
+      <a class="ct" data-contact="tel-link">
+        <span class="ico g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <div><small>தொலைபேசி</small><b data-contact="phone"></b></div>
+      </a>
+      <a class="ct" data-contact="wa-link" target="_blank" rel="noopener">
+        <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-12.6 7.3L3 20.5l1.8-5.2A8.5 8.5 0 1 1 21 11.5Z"/></svg></span>
+        <div><small>WhatsApp</small><b data-contact="phone"></b></div>
+      </a>
+    </div>
+  </div>
+</section>
 
 <section class="block alt" id="faq">
   <div class="container">
@@ -436,10 +540,13 @@
       <details open><summary>யார் பங்கேற்கலாம்?</summary><p>மாணவர்கள், டெவலப்பர்கள், வடிவமைப்பாளர்கள் மற்றும் AI ஆர்வலர்கள் – தமிழிலும் AI-யிலும் ஆர்வமுள்ள அனைவரும் பங்கேற்கலாம்.</p></details>
       <details><summary>போட்டி எங்கு நடைபெறும்?</summary><p>இது முழுக்க இணையவழி (ஆன்லைன்) போட்டி. நீங்கள் எங்கிருந்தும் பங்கேற்கலாம்.</p></details>
       <details><summary>பதிவுக் கட்டணம் எவ்வளவு?</summary><p>ஒரு பங்கேற்பாளருக்கு ₹50.</p></details>
-      <details><summary>என்னென்ன போட்டிப் பிரிவுகள் உள்ளன?</summary><p>AI உருவாக்கிய தமிழ் கவிதை, AI உருவாக்கிய சுவரொட்டிகள், AI உருவாக்கிய குறும்படங்கள் – மூன்றும் மகாகவி பாரதியாரின் சிந்தனைகளை மையமாகக் கொண்டவை.</p></details>
+      <details><summary>என்னென்ன போட்டிப் பிரிவுகள் உள்ளன?</summary><p>AI உருவாக்கிய தமிழ் கவிதை, AI உருவாக்கிய சுவரொட்டிகள், AI உருவாக்கிய குறும்படங்கள். மூன்று பிரிவுகளிலும், பாரதியாரின் கருத்துகளால் ஈர்க்கப்பட்டு AI உதவியுடன் நீங்கள் உருவாக்கும் புதிய, சொந்தப் படைப்புகள் இருக்க வேண்டும்.</p></details>
       <details><summary>கடைசி தேதி மற்றும் முடிவுகள் எப்போது?</summary><p>படைப்புகளைச் சமர்ப்பிக்கக் கடைசி நாள் டிசம்பர் 9, 2026. வெற்றியாளர்கள் டிசம்பர் 11, 2026 – பாரதியார் பிறந்தநாளில் அறிவிக்கப்படுவர்.</p></details>
       <details><summary>பங்கேற்புச் சான்றிதழ் கிடைக்குமா?</summary><p>ஆம், பங்கேற்பாளர்களுக்குப் பங்கேற்புச் சான்றிதழ் வழங்கப்படும். சிறந்த படைப்புகளுக்குச் சிறப்புப் பரிசுகளும் உண்டு.</p></details>
-      <details><summary>எப்படிப் பதிவு செய்வது?</summary><p>“பதிவு செய்ய” பொத்தானை அழுத்தி OpenMadurAI நிகழ்வுப் பக்கத்தில் பதிவு செய்யுங்கள். சமர்ப்பிப்பு முறை மற்றும் விதிமுறைகள் பற்றிய முழு விவரங்களும் அங்கே கிடைக்கும்.</p></details>
+      <details><summary>எப்படிப் பதிவு செய்வது?</summary><p>“பதிவு செய்ய” பொத்தானை அழுத்தி, பதிவுப் படிவத்தில் உங்கள் பெயர், மின்னஞ்சல், கைபேசி எண், கல்லூரி / நிறுவனம் ஆகியவற்றை நிரப்பிச் சமர்ப்பியுங்கள்.</p></details>
+      <details><summary>கட்டணத்தை எப்படிச் செலுத்துவது?</summary><p>பதிவு செய்த பிறகு, ₹50 கட்டணம் செலுத்துவதற்கான QR குறியீடு நீங்கள் படிவத்தில் கொடுத்த கைபேசி எண்ணின் WhatsApp-க்கு அனுப்பப்படும். அந்த QR குறியீட்டை ஸ்கேன் செய்து கட்டணத்தைச் செலுத்துங்கள்.</p></details>
+      <details><summary>படைப்பை எப்படிச் சமர்ப்பிப்பது?</summary><p>உங்கள் படைப்பை டிசம்பர் 9, 2026-க்குள் <a data-contact="email-link"><span data-contact="email"></span></a> என்ற மின்னஞ்சலுக்கு அனுப்புங்கள். விவரங்களுக்கு “படைப்பைச் சமர்ப்பிக்கும் முறை” பகுதியைப் பார்க்கவும்.</p></details>
+      <details><summary>சந்தேகங்களுக்கு யாரைத் தொடர்பு கொள்வது?</summary><p>மின்னஞ்சல்: <a data-contact="email-link"><span data-contact="email"></span></a> · தொலைபேசி / WhatsApp: <a data-contact="tel-link"><span data-contact="phone"></span></a></p></details>
     </div>
   </div>
 </section>
@@ -447,9 +554,9 @@
 <section class="final">
   <div class="container">
     <h2>தமிழுக்கு உங்கள் AI படைப்பைப் பரிசளியுங்கள்</h2>
-    <p>பாரதியார் பிறந்தநாள் சிறப்புப் போட்டியில் இன்றே இணையுங்கள்.</p>
+    <p>பதிவு செய்யுங்கள் • ₹50 செலுத்துங்கள் • டிசம்பர் 9-க்குள் உங்கள் படைப்பை அனுப்புங்கள்.</p>
     <div class="actions">
-      <a class="btn btn-gold" href="https://openmadurai.org/sl/MsQuFQP0" target="_blank" rel="noopener">இப்போதே பதிவு செய்யுங்கள் – ₹50</a>
+      <a class="btn btn-gold" href="https://docs.google.com/forms/d/e/1FAIpQLSdV_IE2c8BKWEeKO6FIAtXFcLBswMaPrWl68UuVDdVlh06cZg/viewform" target="_blank" rel="noopener">இப்போதே பதிவு செய்யுங்கள் – ₹50</a>
     </div>
     <div class="tagline">சிந்தி <span>•</span> புதுமை செய் <span>•</span> தமிழில் படை</div>
   </div>
@@ -460,11 +567,31 @@
   <div class="container">
     <img src="assets/zelid-logo-white.svg" alt="Zelid Tech">
     <span>© 2026 Zelid Tech · <span class="en">Learn • Build • Grow</span></span>
-    <span>பதிவு: <a href="https://openmadurai.org/events/0cb83b2d-2936-4599-8345-e1cc2ae53da0" target="_blank" rel="noopener">OpenMadurAI நிகழ்வுப் பக்கம்</a></span>
+    <span class="contact-line">தொடர்புக்கு: <a data-contact="email-link"><span data-contact="email"></span></a> · <a data-contact="tel-link"><span data-contact="phone"></span></a></span>
   </div>
 </footer>
 
 <script>
+  // ===== CONTACT DETAILS – fill in these two lines; the whole page updates automatically =====
+  const CONTACT_EMAIL = '';            // e.g. 'contact@example.com'
+  const CONTACT_PHONE = '';            // e.g. '+91 98765 43210'
+  // =============================================================================================
+  (function fillContacts() {
+    const digits = CONTACT_PHONE.replace(/[^0-9]/g, '');
+    const intl = digits.length === 10 ? '91' + digits : digits;
+    const subject = 'தமிழ் AI படைப்பாற்றல் சவால் 2026 – [பிரிவு] – [உங்கள் பெயர்]';
+    const body = 'பெயர்:\nபதிவு செய்த கைபேசி எண்:\nகல்லூரி / நிறுவனம்:\nபிரிவு (கவிதை / சுவரொட்டி / குறும்படம்):\nபடைப்பு இணைப்பு (Drive link) அல்லது இணைக்கப்பட்ட கோப்பு:\n';
+    const soon = 'விரைவில் அறிவிக்கப்படும்';
+    document.querySelectorAll('[data-contact="email"]').forEach(el => { el.textContent = CONTACT_EMAIL || soon; el.classList.toggle('pending', !CONTACT_EMAIL); });
+    document.querySelectorAll('[data-contact="phone"]').forEach(el => { el.textContent = CONTACT_PHONE || soon; el.classList.toggle('pending', !CONTACT_PHONE); });
+    document.querySelectorAll('[data-contact="email-link"]').forEach(a => { if (CONTACT_EMAIL) a.href = 'mailto:' + CONTACT_EMAIL; });
+    document.querySelectorAll('[data-contact="tel-link"]').forEach(a => { if (intl) a.href = 'tel:+' + intl; });
+    document.querySelectorAll('[data-contact="wa-link"]').forEach(a => { if (intl) a.href = 'https://wa.me/' + intl; });
+    document.querySelectorAll('[data-contact="mailto"]').forEach(a => {
+      if (CONTACT_EMAIL) a.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+  })();
+
   // mobile menu
   const mb = document.getElementById('menuBtn'), menu = document.getElementById('menu');
   mb.addEventListener('click', () => { const o = menu.classList.toggle('open'); mb.setAttribute('aria-expanded', o); });
